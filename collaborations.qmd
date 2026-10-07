@@ -1,0 +1,57 @@
+---
+title: "Collaborations"
+description: "The people I work with across Europe and Latin America, from intracranial electrophysiology and speech to mesoscale MRI and familial Alzheimer's disease."
+---
+
+::: {.card-grid}
+
+::: {.card}
+### [Mark J. Roberts](https://www.maastrichtuniversity.nl/mark.roberts)
+Associate Professor, Department of Cognitive Neuroscience, Maastricht University, Netherlands.
+
+*Electrocorticography (ECoG) and cortical mapping.*
+:::
+
+::: {.card}
+### [Omer Faruk Gulban](https://ofgulban.github.io/)
+Researcher and Software Developer, Brain Innovation, and Department of Cognitive Neuroscience, Maastricht University, Netherlands.
+
+*[MesoVein](https://mesoveins.com/): whole-brain mesoscale imaging of cortical veins at ultra high-field 7 Tesla.*
+:::
+
+::: {.card}
+### [Adriana L. Ruiz-Rizzo](https://scholar.google.com/citations?user=L2v2k5QAAAAJ)
+Researcher, Hans Berger Department of Neurology, Jena University Hospital, Germany.
+
+*Functional MRI and visual perception.*
+:::
+
+::: {.card}
+### [João M. Correia](https://www.ualg.pt/bio/jmcorreia)
+Professor, University of Algarve, Faro, Portugal.
+
+*Speech production and neural entrainment measured with EEG.*
+:::
+
+::: {.card}
+### [Rafael Posada-Duque](https://scholar.google.com/citations?user=8qw3x2oAAAAJ)
+Associate Professor, Institute of Biology, and Neuroscience Group of Antioquia, University of Antioquia, Medellín, Colombia.
+
+*Familial Alzheimer's disease and mesoscale cortical veins.*
+:::
+
+::: {.card}
+### [Dimo Ivanov](https://www.aesthetics.mpg.de/en/the-institute/people/dimo-ivanov.html)
+Research Group Leader, Structural and Physiological Imaging with High-Field MRI, Max Planck Institute for Empirical Aesthetics, Frankfurt am Main, Germany.
+
+*Mesoscale cortical veins with high-field MRI.*
+:::
+
+::: {.card}
+### [Christine Preibisch](https://neuroradiologie.mri.tum.de/de/team/christine_preibisch)
+Professor, MR physics group, Department of Diagnostic and Interventional Neuroradiology, Klinikum rechts der Isar, Technical University of Munich, Germany.
+
+*Quantitative MRI sequences for familial Alzheimer's disease.*
+:::
+
+:::

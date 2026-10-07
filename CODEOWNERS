@@ -1,0 +1,13 @@
+# CODEOWNERS — archilaresearch.github.io
+# Replace @ArchilaResearch/owner with the real GitHub username before enabling
+# branch protection. The product owner reviews all changes.
+
+*                        @ArchilaResearch/owner
+
+# Affiliation, relationship wording, and legal text — always owner-reviewed.
+/_variables.yml          @ArchilaResearch/owner
+/legal.qmd               @ArchilaResearch/owner
+/about.qmd               @ArchilaResearch/owner
+/privacy.qmd             @ArchilaResearch/owner
+/.github/                @ArchilaResearch/owner
+/GOVERNANCE.md           @ArchilaResearch/owner

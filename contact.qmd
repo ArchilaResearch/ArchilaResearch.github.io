@@ -1,0 +1,10 @@
+---
+title: "Contact"
+---
+
+
+
+- **Email:** [{{< var contact.email >}}](mailto:{{< var contact.email >}})
+- **Currently based at:** {{< var affiliation.current >}}
+
+For corrections or opportunities, email the address above or open an [issue](https://github.com/ArchilaResearch/archilaresearch.github.io/issues/new/choose).

@@ -1,0 +1,68 @@
+lang: en
+
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+
+# Site metadata (affiliation, contacts, links) lives in _variables.yml.
+# Use {{< var key >}} in pages so the site stays portable.
+
+website:
+  title: "Mario Archila BRAINS Research Line"
+  description: "Biological Research and Artificial Intelligence in Neural Systems (BRAINS): the research program I lead, Mario Archila."
+  site-url: "https://archilaresearch.github.io"
+  favicon: assets/favicon.svg
+  open-graph: true
+  twitter-card: true
+  navbar:
+    logo: assets/logo.svg
+    title: "Archila Research"
+    collapse-below: lg
+    left:
+      - text: "Research"
+        href: research.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "Teaching"
+        href: teaching.qmd
+      - text: "Code & Data"
+        href: code-data.qmd
+      - text: "Collaborations"
+        href: collaborations.qmd
+      - text: "Sci-Comm"
+        href: sci-comm.qmd
+    right:
+      - text: "BPCN Lab →"
+        href: "https://bpcn-lab.github.io"
+        target: _blank
+  page-footer:
+    border: true
+    left: |
+      **Mario Archila BRAINS Research Line**
+    center:
+      - text: "About"
+        href: about.qmd
+      - text: "Contact"
+        href: contact.qmd
+      - text: "Accessibility"
+        href: accessibility.qmd
+      - text: "Privacy"
+        href: privacy.qmd
+      - text: "Legal notice"
+        href: legal.qmd
+    right: |
+      [GitHub](https://github.com/ArchilaResearch)
+
+format:
+  html:
+    theme:
+      - litera
+      - styles/theme.scss
+    toc: false
+    grid:
+      body-width: 900px
+    link-external-newwindow: true
+    link-external-icon: true
+    smooth-scroll: true

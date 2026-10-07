@@ -1,0 +1,36 @@
+---
+title: "Code & Data"
+aliases:
+  - software-data.html
+description: "Open code, interactive explainers, and tutorials that accompany my publications and teaching. Each entry links back to the work it supports."
+---
+
+## Interactive explainers and analysis code
+
+### Neurovascular coupling and resting-state connectivity {#neurovascular-modeling}
+
+A simulation framework showing how changes in cerebral blood flow, oxygen metabolism, and blood volume can, on their own, reshape and even reverse resting-state BOLD functional connectivity. The interactive companion page walks through the model step by step and includes a simulator you can run in the browser.
+
+[Interactive explainer and simulator](https://virtualmarioe.github.io/neurovascular_modeling/) · [Repository](https://github.com/virtualmarioe/neurovascular_modeling) · Paper: [Archila-Meléndez, Sorg & Preibisch, *NeuroImage* 2020](publications.qmd)
+
+### Predicting the probability of finding missing older adults {#missing-adults}
+
+A supervised machine-learning study of 7,855 open-data cases of missing older adults in Colombia (1930 to 2021), identifying the individual and environmental factors that predict whether a missing person is later found. The interactive companion page presents the data, models, and findings.
+
+[Interactive explainer](https://virtualmarioe.github.io/missing_adults/) · [Repository](https://github.com/virtualmarioe/missing_adults) · Paper: [Ruiz-Rizzo, Archila-Meléndez & González Veloza, *Journal of Computational Social Science* 2022](publications.qmd)
+
+## Outreach and teaching code
+
+The public-facing descriptions of these projects live on the [Sci-Comm](sci-comm.qmd) page.
+
+### The Intelligence Atlas {#intelligence-atlas}
+
+Source code for the interactive Intelligence Atlas, built in TypeScript.
+
+[Repository](https://github.com/virtualmarioe/brain-machines-and-ideas-in-between) · [About the Atlas](sci-comm.qmd#intelligence-atlas)
+
+### Web-scraping tutorial {#web-scraping-tutorial}
+
+A short notebook introducing web scraping, used to collect the geographic data for the [missing older adults study](#missing-adults).
+
+[Repository](https://github.com/virtualmarioe/Web_scraping_tutorial) · [On Sci-Comm](sci-comm.qmd#web-scraping)

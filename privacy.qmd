@@ -1,0 +1,22 @@
+---
+title: "Privacy notice"
+description: "Privacy notice for the Mario Archila BRAINS Research Line website."
+---
+
+## What I collect
+
+This is a static website with **no analytics, no advertising trackers, and no visitor profiling**. It does not collect participant, health, or personal data through the site.
+
+## Hosting
+
+Served as static files (GitHub Pages). The host may process technical request data (e.g. IP addresses) for delivery and security, under its own policy.
+
+## Personal data
+
+Collaborators are listed by name and public affiliation; anyone listed may request correction or removal.
+
+## Your rights & contact
+
+To request correction or removal, contact the data controller: {{< var lead.name >}}, [{{< var contact.email >}}](mailto:{{< var contact.email >}}).
+
+*Last reviewed: 2026-10-07.*

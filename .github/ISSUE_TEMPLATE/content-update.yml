@@ -1,0 +1,25 @@
+name: Content update
+description: Add or correct a person, publication, project, course, or software entry.
+title: "[Content] "
+labels: ["content"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of content?
+      options: [Person / profile, Publication, Project, Course / teaching, Software / data, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Include titles, roles, dates, links (DOI/ORCID/GitHub), and any corrections.
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent (required for any personal data)
+      options:
+        - label: If this includes a person's data, they consent to appearing publicly, and any image has a documented source, rights basis, and alt text.

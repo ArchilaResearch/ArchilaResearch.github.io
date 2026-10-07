@@ -1,0 +1,37 @@
+---
+title: "Sci-Comm"
+description: "Writing, interactive explorations, and tutorials that open neuroscience and AI to a wider audience."
+---
+
+## Writing
+
+### Clinical Code {#clinical-code}
+
+[Clinical Code](https://clinicalcode.substack.com/) is my Substack, where I write essays at the meeting point of neuroscience, artificial intelligence, and medicine.
+
+Latest essay: **[Algorithms over amperes: why neuroscience is the roadmap to A(G)I and not just a metaphor](https://clinicalcode.substack.com/p/algorithms-over-amperes-why-neuroscience)**. Using the history of magnetic resonance imaging, I argue that tomorrow's breakthroughs in artificial intelligence will come from better ideas, not just larger models.
+
+[Read and subscribe on Substack](https://clinicalcode.substack.com/)
+
+## Interactive explorations
+
+### The Intelligence Atlas {#intelligence-atlas}
+
+An interactive atlas of the connected histories of neuroscience, computation, and machine learning. It follows ideas that travelled from biological cells to artificial systems and back again, through linked discoveries, timelines, idea graphs, and scientific demonstrations, in English, German, and Spanish. It accompanies my [Neuro-AI course](teaching.qmd#neuro-ai) and the research topic [Natural and artificial intelligence in medicine](research.qmd).
+
+[Open the Atlas](https://brain-machines-and-ideas-in-between.vercel.app/en) · [Source code](code-data.qmd#intelligence-atlas)
+
+### Paper explainers {#explainers}
+
+Interactive companion pages that turn two of my papers into something you can explore in the browser:
+
+- **[Neurovascular coupling and resting-state connectivity](https://virtualmarioe.github.io/neurovascular_modeling/).** A step-by-step guide to how changes in blood flow, oxygen metabolism, and blood volume can reshape, and even reverse, resting-state BOLD connectivity, with a simulator you can run yourself. ([Paper and code](code-data.qmd#neurovascular-modeling))
+- **[Predicting the probability of finding missing older adults](https://virtualmarioe.github.io/missing_adults/).** A walk through the data, models, and findings of a machine-learning study of 7,855 missing-person cases in Colombia. ([Paper and code](code-data.qmd#missing-adults))
+
+## Tutorials
+
+### Web scraping {#web-scraping}
+
+A short, hands-on notebook introducing web scraping, written while collecting the geographic data for the missing older adults study.
+
+[Open the tutorial](https://github.com/virtualmarioe/Web_scraping_tutorial) · [On Code & Data](code-data.qmd#web-scraping-tutorial)

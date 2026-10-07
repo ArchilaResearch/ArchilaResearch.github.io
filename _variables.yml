@@ -1,0 +1,35 @@
+# ---------------------------------------------------------------------------
+# Site metadata for Archila Research.
+# All values that change when the research line moves institution live here.
+# Edit these values instead of editing page content; URLs stay stable.
+# ---------------------------------------------------------------------------
+
+group:
+  name: "Mario Archila BRAINS Research Line"
+  short: "Archila Research"
+  label: "Research Line"
+  focus: "Translational Neuro-AI and Cognitive Neuroscience"
+  subtitle: "Biological Research and Artificial Intelligence in Neural Systems"
+  acronym: "BRAINS"
+
+lead:
+  name: "Mario Archila"
+  title: ""          # group lead's title, shown where relevant
+
+affiliation:
+  current: "Department of Biological Psychology and Cognitive Neuroscience, Friedrich Schiller University Jena"
+  short: "BPCN, FSU Jena"
+
+# Public relationship statement (first person), shown on the homepage.
+relationship_statement: >-
+  I lead the Mario Archila BRAINS Research Line, a Translational Neuro-AI and
+  Cognitive Neuroscience program based within the Department of Biological
+  Psychology and Cognitive Neuroscience at Friedrich Schiller University Jena.
+
+contact:
+  email: "mario.archila@uni-jena.de"
+  orcid: ""                            # ORCID iD
+  github: "https://github.com/ArchilaResearch"
+
+links:
+  lab: "https://bpcn-lab.github.io"

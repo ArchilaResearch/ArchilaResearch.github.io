@@ -1,0 +1,16 @@
+---
+title: "Accessibility"
+description: "Accessibility statement for the Mario Archila BRAINS Research Line website."
+---
+
+This site aims to meet **WCAG 2.2 AA**: semantic headings, keyboard navigation, visible focus, sufficient contrast, descriptive links, image alt text, responsive reflow, and reduced-motion support. Core content works without JavaScript.
+
+## Known limitations
+
+Early release; some collection pages are placeholders. Please report any barrier.
+
+## Feedback
+
+Email [{{< var contact.email >}}](mailto:{{< var contact.email >}}) or open an [accessibility correction](https://github.com/ArchilaResearch/archilaresearch.github.io/issues/new/choose). I aim to respond promptly.
+
+*Last reviewed: 2026-07-16.*

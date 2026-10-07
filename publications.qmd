@@ -1,0 +1,44 @@
+---
+title: "Publications"
+description: "Publications listed by year."
+---
+
+## 2026
+
+- Omer Faruk Gulban, Rüdiger Stirnberg, Desmond Ho Yan Tse, Alessandra Pizzuti, Kenshu Koiso, **Mario Eduardo Archila-Meléndez**, Laurentius Renzo Huber, Saskia Bollmann, Rainer Goebel, Kendrick Kay, Dimo Ivanov. **Whole-brain meso-vein imaging in living humans using fast 7-T MRI.** *Science Advances* 12(2), eaea4540. [doi:10.1126/sciadv.aea4540](https://doi.org/10.1126/sciadv.aea4540) (preprint: [doi:10.1101/2025.03.23.644588](https://doi.org/10.1101/2025.03.23.644588)) · [MesoVeins project](https://mesoveins.com/)
+
+## 2024
+
+- Adriana L Ruiz-Rizzo, Kathrin Finke, **Mario E Archila-Meléndez**. **Diffusion tensor imaging in Alzheimer's studies.** In: *Biomarkers for Alzheimer's Disease Drug Development*, 105–113. Springer. [doi:10.1007/978-1-0716-3774-6_8](https://doi.org/10.1007/978-1-0716-3774-6_8)
+
+## 2022
+
+- R Nuttall, C Jäger, J Zimmermann, **Mario E Archila-Meléndez**, C Preibisch, P Taylor, P Sauseng, A Wohlschläger, C Sorg, J Dowsett. **Evoked responses to rhythmic visual stimulation vary across sources of intrinsic alpha activity in humans.** *Scientific Reports* 12(1), 5986. [doi:10.1038/s41598-022-09922-2](https://doi.org/10.1038/s41598-022-09922-2)
+- Sebastian C Schneider, **Mario E Archila-Meléndez**, Jens Göttler, Stephan Kaczmarz, Benedikt Zott, Josef Priller, Michael Kallmayer, Claus Zimmer, Christian Sorg, Christine Preibisch. **Resting-state BOLD functional connectivity depends on the heterogeneity of capillary transit times in the human brain: a combined lesion and simulation study about the influence of blood flow response timing.** *NeuroImage* 255, 119208. [doi:10.1016/j.neuroimage.2022.119208](https://doi.org/10.1016/j.neuroimage.2022.119208)
+- Adriana L Ruiz-Rizzo, **Mario E Archila-Meléndez**, José John Fredy González Veloza. **Predicting the probability of finding missing older adults based on machine learning.** *Journal of Computational Social Science* 5(2), 1303–1321. [doi:10.1007/s42001-022-00171-x](https://doi.org/10.1007/s42001-022-00171-x) · [Interactive explainer](https://virtualmarioe.github.io/missing_adults/) · [Code](https://github.com/virtualmarioe/missing_adults) · [Web-scraping tutorial](https://github.com/virtualmarioe/Web_scraping_tutorial) ([details](code-data.qmd#missing-adults))
+
+## 2020
+
+- **Mario E Archila-Meléndez**, Christian Sorg, Christine Preibisch. **Modeling the impact of neurovascular coupling impairments on BOLD-based functional connectivity at rest.** *NeuroImage* 218, 116871. [doi:10.1016/j.neuroimage.2020.116871](https://doi.org/10.1016/j.neuroimage.2020.116871) · [Interactive explainer and simulator](https://virtualmarioe.github.io/neurovascular_modeling/) · [Code](https://github.com/virtualmarioe/neurovascular_modeling) ([details](code-data.qmd#neurovascular-modeling))
+- **Mario E Archila-Meléndez**, Giancarlo Valente, Erik D Gommer, João M Correia, Sanne Ten Oever, Judith C Peters, Joel Reithler, Marc PH Hendriks, William Cornejo Ochoa, Olaf EMG Schijns, Jim TA Dings, Danny MW Hilkman, Rob PW Rouhl, Bernadette M Jansma, Vivianne HJM van Kranen-Mastenbroek, Mark J Roberts. **Combining gamma with alpha and beta power modulation for enhanced cortical mapping in patients with focal epilepsy.** *Frontiers in Human Neuroscience* 14, 555054. [doi:10.3389/fnhum.2020.555054](https://doi.org/10.3389/fnhum.2020.555054)
+- **Mario E Archila-Meléndez**. **Cortical mapping with intracranial electrophysiology in drug-resistant focal epilepsy.** In: *Las epilepsias: veinte años de investigación en Colombia*, 245–258.
+
+## 2018
+
+- **Mario E Archila-Meléndez**, Giancarlo Valente, João M Correia, Rob PW Rouhl, Vivianne H van Kranen-Mastenbroek, Bernadette M Jansma. **Sensorimotor representation of speech perception: cross-decoding of place of articulation features during selective attention to syllables in 7T fMRI.** *eNeuro* 5(2), ENEURO.0252-17.2018. [doi:10.1523/ENEURO.0252-17.2018](https://doi.org/10.1523/ENEURO.0252-17.2018)
+
+## 2013
+
+- **Mario Eduardo Archila Meléndez**, Margarita María Giraldo Chica, William Cornejo Ochoa, Jorge Alejandro Henao-Mejía, María Teresa Rugeles López, Magda Lahorgue Nunes. **Polysomnographic evaluation of uninfected babies born to human immunodeficiency virus type 1 positive mothers.** *Iatreia* 26(3), 269–277.
+
+## 2009
+
+- C Gómez, **ME Archila**, C Rugeles, J Carrizosa, MT Rugeles, JW Cornejo. **A prospective study of neurodevelopment of uninfected children born to human immunodeficiency virus type 1 positive mothers.** *Revista de Neurología* 48(6), 287–291.
+
+## Conference abstracts
+
+- **Mario E Archila-Meléndez**, Vivianne H van Kranen-Mastenbroek, Giancarlo Valente, João Correia, Erik D Gommer, Bernadette M Jansma, Rob P Rouhl, Mark J Roberts. **The role of oscillatory activity in attentive speech perception: an ECoG study in epilepsy patients.** *Clinical Neurophysiology* 129, e145 (S09).
+
+---
+
+*To suggest an addition or correction, open an issue on the [site repository](https://github.com/ArchilaResearch).*

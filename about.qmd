@@ -1,0 +1,30 @@
+---
+title: "About"
+description: "Profile, research approach, and values."
+---
+
+## Mario Archila
+
+I am a clinician-scientist with a decade-long track record in medicine and neuroscience research. I combine neuroimaging, electrophysiology, machine learning, and computational modelling to answer neuroscientific questions, and I lead a {{< var group.focus >}} research program.
+
+My primary focus is unravelling the neurophysiological underpinnings of cognition, and of language perception in particular, together with their implications for brain pathologies. A defining commitment of my research line is translational: turning fundamental research insights into tangible clinical and neurosurgical solutions.
+
+## Research approach
+
+I work at the frontier of functional neurosurgery, from deep brain stimulation and epilepsy surgery to electrocorticography (ECoG) and neuroprosthetics, integrating clinical innovation with rigorous research. Building on hands-on experience with ECoG, I draw on principles from physics (including chaos theory), network neuroscience, and artificial intelligence to pioneer new therapeutic approaches that both deepen our understanding of brain mechanisms and enhance patient care.
+
+Delivering on this often means building the tools the science requires. I develop new acquisition and analysis methods, with an emphasis on optimising ultra high-field 7 Tesla functional and anatomical MRI sequences, for both applied research and clinical use.
+
+A second thread runs alongside this clinical work: understanding both natural and artificial intelligence, and using AI to improve diagnostics and therapeutics. I see enormous potential for AI in science and believe that, done right, it can accelerate scientific discovery, particularly in healthcare. A fuller account of these questions and the methods behind them is on the [Research](research.qmd) page.
+
+## Values & open science
+
+I am committed to reproducible research: open software, documented pipelines, and clear data statements accompanying published work, within ethical and institutional constraints. I treat artificial intelligence as a tool to be used responsibly, in the conviction that, applied well, it can accelerate discovery and improve care.
+
+## Collaboration
+
+I care deeply about collaboration and am always eager to work with multidisciplinary teams that harness science and technology to advance patient care. I welcome connections with researchers and clinicians who share a collaborative vision for science and for the future of medicine, neuroscience, and AI and their real-world applications. You can see who I currently work with on the [Collaborations](collaborations.qmd) page, and reach me through the [Contact](contact.qmd) page.
+
+## More
+
+[Accessibility](accessibility.qmd) · [Privacy](privacy.qmd) · [Legal notice](legal.qmd) · [Contact](contact.qmd)

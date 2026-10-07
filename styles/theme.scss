@@ -1,0 +1,336 @@
+/*-- scss:defaults --*/
+// Archila Research design tokens: "deep petrol + ocean + amber".
+// A blue-family palette in the same spirit as the BPCN lab site, but built from
+// its OWN hues (petrol/ocean/amber, not FSU navy/gold/sky) so the two sites stay
+// clearly distinguishable (ownership model: separate visual identities).
+// Every text tone is WCAG-AA verified on the surface it actually sits on.
+
+// Source palette
+$navy:   #0E3A53;  // Deep Petrol  (primary: navbar, headings)
+$ocean:  #1C6B8C;  // Ocean        (interactive accent: links, focus)
+$amber:  #B5722E;  // Warm Amber   (BRAINS pop, warm highlight)
+$mist:   #F5F8FA;  // Mist         (page background, cool near-white)
+$sky:    #9CC1D6;  // Sky          (navbar hover, soft highlight on dark)
+$amber-light: #F0B66B;  // Light Amber (accents on dark/ocean surfaces)
+$abyss:  #071F2E;  // Abyss        (darkest ground of the hero band)
+
+// Derived cool neutrals
+$ink:      #16232C;  // primary text     ~15:1 on mist
+$muted:    #3E525E;  // secondary text   ~7:1 on mist
+$surface:  #E9F0F5;  // card / callout surface, one elevation step off the page
+$hairline: #D3E0E8;  // subtle separators and card borders
+
+// Bootstrap / litera overrides
+$primary:                $ocean;      // interactive accent (links, buttons)
+$body-bg:                $mist;
+$body-color:             $ink;
+$link-color:             $ocean;
+$link-hover-color:       $navy;
+$headings-color:         $navy;
+$headings-font-weight:   700;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, system-ui, sans-serif;
+
+// Navbar (Quarto)
+$navbar-bg: $navy;
+$navbar-fg: #EAF2F7;
+$navbar-hl: $sky;
+
+/*-- scss:rules --*/
+:root {
+  --ar-navy: #{$navy};
+  --ar-ocean: #{$ocean};
+  --ar-amber: #{$amber};
+  --ar-mist: #{$mist};
+  --ar-ink: #{$ink};
+  --ar-muted: #{$muted};
+  --ar-surface: #{$surface};
+  --ar-hairline: #{$hairline};
+}
+
+/* Always reserve the scrollbar gutter so pages that scroll and pages that don't
+   keep the same content width. Without this, navigating between a long page and a
+   short one changes the viewport width by the scrollbar, and every width-relative
+   element (the hero image) visibly jumps. */
+html { scrollbar-gutter: stable; }
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 17px;
+  line-height: 1.62;
+  font-variant-numeric: lining-nums slashed-zero;
+  letter-spacing: 0.003em;
+}
+
+/* The base theme sets prose to a serif; keep the system sans stack everywhere
+   except code, for one consistent, Apple-style typographic voice. */
+p, li, dd, dt, blockquote, figcaption, .lede, td, th,
+.navbar, input, button, select, textarea {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, system-ui, sans-serif;
+}
+
+/* Type scale: navy headings, balanced wrapping, tightened display tracking. */
+h1, h2, h3, h4, h5 { color: var(--ar-navy); text-wrap: balance; }
+h1 { font-weight: 800; letter-spacing: -0.018em; line-height: 1.1; }
+h2 {
+  font-weight: 700;
+  letter-spacing: -0.012em;
+  border-bottom: 1px solid var(--ar-hairline);
+  padding-bottom: 0.3rem;
+  margin-top: 2.4rem;
+}
+h3 { font-weight: 700; font-size: 1.16rem; letter-spacing: -0.006em; }
+p, li { text-wrap: pretty; }
+strong, b { font-weight: 700; }
+
+/* Menu: bold navigation, per request, with a touch more presence. */
+.navbar { font-weight: 700; }
+.navbar .navbar-brand { font-weight: 800; letter-spacing: -0.01em; }
+.navbar .nav-link { font-weight: 700; }
+
+/* Links: ocean, comfortable underline offset; hover deepens to navy. */
+a { text-underline-offset: 0.15em; }
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--ar-ocean);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* Tabular, lining, slashed-zero figures for any column of numbers. */
+table { font-variant-numeric: tabular-nums lining-nums slashed-zero; }
+
+/* Hero ---------------------------------------------------------------------
+   Full-bleed dark band with the brain image screen-blended onto a petrol
+   ground, and a vivid ocean panel on the right that overhangs into the page
+   (layout modelled on citadelsecurities.com). Base styles are the final,
+   visible state: entrance motion runs once on load, the slow background drift
+   only runs when JS adds `.ar-motion` (so the pause control exists), and all
+   motion is off under prefers-reduced-motion. */
+#title-block-header:empty { display: none; }   /* Quarto inserts one even when unused */
+#quarto-document-content:has(> .hero-cs) { margin-top: 0; padding-top: 0; }   /* hero flush under the navbar */
+
+.hero-cs {
+  --overhang: 88px;
+  position: relative;
+  isolation: isolate;
+  min-height: clamp(480px, 72vh, 660px);
+  margin-bottom: calc(var(--overhang) + 2.75rem);
+  background: radial-gradient(120% 95% at 27% 55%, #1B5A7C 0%, #0D3A55 42%, $abyss 100%);
+  color: #fff;
+}
+.hero-cs__media {                   /* no z-index here: it would form its own */
+  position: absolute;               /* stacking context and stop the image from */
+  inset: 0;                         /* blending with the hero's petrol ground  */
+  overflow: hidden;
+}
+.hero-cs__media::after {            /* calm the side the panel sits on */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba($abyss, 0) 38%, rgba($abyss, .55) 78%);
+  pointer-events: none;
+}
+.hero-cs__img {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  width: auto;
+  height: 128%;
+  max-width: none;
+  transform: translate(-50%, -50%) scale(1.02);
+  mix-blend-mode: screen;           /* the black ground drops out onto the petrol */
+  opacity: .9;
+  animation: hero-img-in 1.4s cubic-bezier(.22, .61, .36, 1) both;
+}
+.ar-motion .hero-cs__img {
+  animation: hero-img-in 1.4s cubic-bezier(.22, .61, .36, 1) both,
+             hero-drift 28s ease-in-out 1.4s infinite alternate;
+}
+.hero-cs.is-paused .hero-cs__img { animation-play-state: paused; }
+
+.hero-cs__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  min-height: inherit;
+  margin-inline: auto;
+  padding-inline: 32px;
+}
+.hero-cs__panel {
+  position: absolute;
+  right: 32px;
+  bottom: calc(-1 * var(--overhang));
+  width: min(560px, 50%);
+  padding: 56px 56px 52px;
+  background: var(--ar-ocean);
+  animation: hero-panel-in .8s cubic-bezier(.39, .57, .56, 1) .15s both;
+}
+.hero-cs__head {                    /* headline + accent rule beside it */
+  position: relative;
+  margin-bottom: 1.25rem;
+  padding-left: 28px;
+}
+.hero-cs__rule {                    /* a real element (not ::before) so the h1 is */
+  position: absolute;               /* not its parent's first child; see index.qmd */
+  top: .35rem;
+  bottom: .35rem;
+  left: 0;
+  width: 3px;
+  background: $amber-light;
+  transform-origin: top;
+  animation: hero-rule-in .6s cubic-bezier(.39, .57, .56, 1) .6s both;
+}
+.hero-cs__title {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2.2rem, 3.9vw, 3.4rem);
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: -0.022em;
+}
+.hero-cs__wipe {                    /* block-wipe reveal of the headline */
+  position: relative;
+  display: inline-block;
+  text-wrap: balance;
+  animation: hero-wipe-text 1.1s linear .55s both;
+}
+.hero-cs__wipe::after {
+  content: "";
+  position: absolute;
+  inset: 0 -6px;
+  background: $amber-light;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: hero-wipe-block 1.1s cubic-bezier(.77, 0, .18, 1) .55s both;
+}
+.hero-cs__lede {
+  max-width: 36ch;
+  margin: 0 0 1.75rem;
+  color: #E6F0F6;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-wrap: balance;
+  animation: hero-rise .7s cubic-bezier(.39, .57, .56, 1) 1.2s both;
+}
+.hero-cs__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: .55em;
+  padding: 14px 26px;
+  border-radius: 999px;
+  background: $amber-light;
+  color: $navy;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color .2s ease, color .2s ease;
+  animation: hero-rise .7s cubic-bezier(.39, .57, .56, 1) 1.35s both;
+}
+.hero-cs__cta span { transition: transform .2s ease; }
+.hero-cs__cta:hover { background: #fff; color: $navy; }
+.hero-cs__cta:hover span { transform: translateX(3px); }
+.hero-cs__cta:focus-visible { outline: 2px solid #fff; outline-offset: 3px; border-radius: 999px; }
+
+.hero-cs__toggle {                  /* pause/play the background drift (WCAG 2.2.2) */
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  right: 20px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, .6);
+  border-radius: 50%;
+  background: rgba($abyss, .55);
+  color: #fff;
+  cursor: pointer;
+}
+.hero-cs__toggle:hover { background: rgba($abyss, .8); }
+.hero-cs__toggle:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.hero-cs__toggle .icon-play { display: none; }
+.hero-cs.is-paused .hero-cs__toggle .icon-play { display: block; }
+.hero-cs.is-paused .hero-cs__toggle .icon-pause { display: none; }
+
+/* BRAINS acronym: the label and acronym-forming initials in warm amber at bold
+   weight (colour paired with weight, so it survives colour-vision deficiency).
+   Re-tuned to light amber on the ocean hero panel to keep contrast. */
+.brains-acronym {
+  color: var(--ar-amber);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-right: 0.1em;
+}
+.brains-w { white-space: nowrap; }          // keep each initial with its word
+.brains-i { color: var(--ar-amber); font-weight: 700; }
+.hero-cs .brains-acronym,
+.hero-cs .brains-i { color: $amber-light; }
+
+@keyframes hero-img-in    { from { opacity: 0; } to { opacity: .9; } }
+@keyframes hero-drift {
+  from { transform: translate(-50%, -50%) scale(1.02); }
+  to   { transform: translate(-47%, -52%) scale(1.1); }
+}
+@keyframes hero-panel-in  { from { opacity: 0; transform: translateY(32px); } to { opacity: 1; transform: none; } }
+@keyframes hero-rise      { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@keyframes hero-rule-in   { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes hero-wipe-text { 0%, 49% { color: transparent; } 50%, 100% { color: #fff; } }
+@keyframes hero-wipe-block {
+  0%   { transform: scaleX(0); transform-origin: left; }
+  48%  { transform: scaleX(1); transform-origin: left; }
+  52%  { transform: scaleX(1); transform-origin: right; }
+  100% { transform: scaleX(0); transform-origin: right; }
+}
+
+/* Narrow screens: stack the media band above the panel; no overhang. */
+@media (max-width: 959.98px) {
+  .hero-cs { --overhang: 0px; min-height: 0; margin-bottom: 2.5rem; }
+  .hero-cs__media { position: relative; height: clamp(240px, 58vw, 420px); }
+  .hero-cs__media::after { background: linear-gradient(180deg, rgba($abyss, 0) 55%, rgba($abyss, .6) 100%); }
+  .hero-cs__img { left: 50%; height: 140%; }
+  .hero-cs__inner { min-height: 0; padding: 0 16px 16px; }
+  .hero-cs__panel {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: auto;
+    margin-top: -56px;
+    padding: 36px 28px 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-cs *, .hero-cs *::before, .hero-cs *::after { animation: none !important; }
+}
+
+/* Cards / callouts: homogeneous cool surface, uniform hairline, no side bar. */
+/* Centered wrap with equal card widths: 2 per row on wider screens, 1 on phones.
+   An odd card out sits centered instead of stranded at the left. */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.card-grid > .card { flex: 0 1 100%; }
+.after-cards { margin-top: 2rem; }          // breathing room below the card grid
+@media (min-width: 640px) {
+  .card-grid > .card { flex-basis: calc(50% - .5rem); }
+}
+.card,
+.empty-state,
+.callout-plain {
+  background: var(--ar-surface);
+  border: 1px solid var(--ar-hairline);
+  border-radius: 12px;
+  padding: 1.15rem 1.3rem;
+}
+.card h3 { margin-top: 0; font-size: 1.05rem; }
+.empty-state { color: var(--ar-muted); text-align: center; padding: 1.5rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
+}
