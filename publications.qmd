@@ -5,6 +5,7 @@ description: "Publications listed by year."
 
 ## 2026
 
+- Sanne Ten Oever, Joel Reithler, **Mario Eduardo Archila-Meléndez**, Erik Gommer, Rob Rouhl, Vivianne Kranen-Mastenbroek, Mark J Roberts, Judith Peters. **Item-specific clustering of high gamma-band activity on theta phase during speech categorization.** *bioRxiv* (preprint). [doi:10.64898/2026.10.29.762424](https://doi.org/10.64898/2026.10.29.762424)
 - Omer Faruk Gulban, Rüdiger Stirnberg, Desmond Ho Yan Tse, Alessandra Pizzuti, Kenshu Koiso, **Mario Eduardo Archila-Meléndez**, Laurentius Renzo Huber, Saskia Bollmann, Rainer Goebel, Kendrick Kay, Dimo Ivanov. **Whole-brain meso-vein imaging in living humans using fast 7-T MRI.** *Science Advances* 12(2), eaea4540. [doi:10.1126/sciadv.aea4540](https://doi.org/10.1126/sciadv.aea4540) (preprint: [doi:10.1101/2025.03.23.644588](https://doi.org/10.1101/2025.03.23.644588)) · [MesoVeins project](https://mesoveins.com/)
 
 ## 2024
